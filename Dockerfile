@@ -9,5 +9,6 @@ RUN apk add --no-cache --virtual build-deps gcc python2-dev musl-dev openssl-dev
     && apk del build-deps
 
 RUN pip install lektor-webpack-support
+RUN apk add --no-cache sassc
 
 WORKDIR /opt/lektor

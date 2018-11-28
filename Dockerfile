@@ -14,8 +14,8 @@ RUN apk add --no-cache sassc
 WORKDIR /opt/lektor
 
 RUN set -x \
-	&& addgroup -g 1000 -S lektor \
-	&& adduser -u 1000 -D -S -G lektor lektor \
+    && addgroup -g 1000 -S lektor \
+    && adduser -u 1000 -D -S -G lektor lektor
 
 USER lektor
 

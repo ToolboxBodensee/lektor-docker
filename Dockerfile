@@ -18,3 +18,5 @@ RUN set -x \
 	&& adduser -u 1000 -D -S -G lektor lektor \
 
 USER lektor
+
+RUN mkdir -p /home/lektor/.cache
